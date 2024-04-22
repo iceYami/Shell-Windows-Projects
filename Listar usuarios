@@ -1,5 +1,0 @@
-$users = Get-WmiObject Win32_UserAccount | Where-Object { $_.LocalAccount -eq $true }
-Write-Output "Usuarios locales:"
-foreach ($user in $users) {
-    Write-Output "$($user.Name)"
-}
