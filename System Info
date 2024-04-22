@@ -1,3 +1,4 @@
+systeminfo
 function Get-SystemInfo {
     $osInfo = Get-WmiObject -Class Win32_OperatingSystem
     $sysInfo = @{
